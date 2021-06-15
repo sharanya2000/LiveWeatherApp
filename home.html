@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+    crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Dosis&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+      margin:0;
+      background: #222;
+      background-image: url('https://www.nationalmarinasales.com/wp-content/uploads/2018/01/dm2.jpeg')
+    }
+    .card{
+
+      background: #000000d0;
+      color:white;
+      padding: 2em;
+      border-radius: 30px;
+      width: 40%;
+      height: 30vh;
+      max-width: 400px;
+    text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .city{
+      font-family: "Lobster", sans-serif;
+      font-weight:lighter;
+    }
+    .head{
+      font-size: 13px;
+      font-family: "Dosis", sans-serif;
+    }
+    .btn{
+      margin:0.1rem;
+    border-radius: 50%;
+    boredr:none;
+    height: 40px;
+    width:40px;
+    outline: none;
+    background: #7c7c7c2b;
+    color:white;
+    cursor: pointer;
+    transition: 0.2s ease-int-out;
+
+    }
+  
+    #cityInput{
+      border:none;
+      outline: none;
+      padding: 0.8em;
+      border-radius: 15px;
+      color: white;
+      background: #7c7c7c2b;
+      font-family: inherit;;
+      font-size: 80%;
+    }
+
+
+    </style>
+  </head>
+
+  <body>
+
+
+    <div class="card">
+      <div class="head">
+          <h1>Find Live Weather Condition of any location in the world.</h1>
+      </div>
+      <form action="/" method="post">
+
+        <label for="cityInput" class="city">City Name:</label>
+        <input id="cityInput" type ="text" name="cityName" placeholder="Search"/><br /><br />
+        <button class= "btn" type="submit"><i class="fas fa-search"></i></button>
+
+        </form>
+    </div>
+
+
+  </body>
+</html>
